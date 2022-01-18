@@ -5,26 +5,34 @@ exports.config = {
       {
         tunnel: false,
         lambdatestOpts: {
-          logFile: "tunnel.log"
-        }
-      }
-    ]
+          logFile: "tunnel.log",
+        },
+      },
+    ],
   ],
   user: process.env.LT_USERNAME,
   key: process.env.LT_ACCESS_KEY,
-  buildName: process.env.LT_BUILD_NAME,
-  specs: ["./tests/specs/single_test.js"],
+  buildName: "Webdriver  IO",
+  specs: [
+    "./tests/specs/single_test.js",
+    "./tests/specs/test2.js",
+    "./tests/specs/test3.js",
+  ],
   exclude: [],
 
   capabilities: [
     {
       "LT:Options": {
-      browserName: "chrome",
-      version: "latest",
-      name: "Test WebdriverIO Single",
-      build: "WebDriver Selenium Sample"
-    }
-    }],
+        browserName: "chrome",
+        version: "latest",
+        name: "Test WebdriverIO Single",
+        build: "WebDriver Selenium Sample",
+      },
+    },
+  ],
+  // beforeSession: function (config, capabilities, specs) {
+  //   capabilities.name = specs[0].split(/(\\|\/)/g).pop() || undefined;
+  // },
   logLevel: "info",
   coloredLogs: true,
   screenshotPath: "./errorShots/",
@@ -36,6 +44,6 @@ exports.config = {
   port: 80,
   framework: "mocha",
   mochaOpts: {
-    ui: "bdd"
-  }
+    ui: "bdd",
+  },
 };
