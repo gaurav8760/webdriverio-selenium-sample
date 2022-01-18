@@ -22,4 +22,5 @@ steps:
 
 - script: |
     install node
+    npm install npm@latest -g
     npm run single
