@@ -24,5 +24,4 @@ steps:
     install node
     npm install
     install selenium-webdriver
-    npm install webdriverio
     npm run single
