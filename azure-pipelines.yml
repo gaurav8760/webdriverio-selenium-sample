@@ -10,8 +10,9 @@ pool:
   vmImage: 'Ubuntu-latest'
 
 variables:
-  LT_USERNAME: ''
-  LT_ACCESS_KEY: ''
+  LT_USERNAME: 'gauravkb'
+  LT_ACCESS_KEY: 'hUV2fq7Xb0SlFDRL1cwE8bcx71P0hImMJR0aaqN8groMUYzVLJ'
+  REPORT_PORTAL_LAUNCH_ID: $(Build.BuildId)	
 
 steps:
 - task: NodeTool@0
