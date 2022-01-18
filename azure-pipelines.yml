@@ -10,8 +10,8 @@ pool:
   vmImage: 'Ubuntu-latest'
 
 variables:
-  LT_USERNAME: 'gauravkb'
-  LT_ACCESS_KEY: 'hUV2fq7Xb0SlFDRL1cwE8bcx71P0hImMJR0aaqN8groMUYzVLJ'
+  LT_USERNAME: ''
+  LT_ACCESS_KEY: ''
   REPORT_PORTAL_LAUNCH_ID: $(Build.BuildId)	
 
 steps:
