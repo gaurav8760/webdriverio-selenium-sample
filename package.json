@@ -5,7 +5,7 @@
   "description": "Selenium examples for WebdriverIO and LambdaTest Selenium Grid",
   "scripts": {
     "test": "npm run single && npm run parallel && npm run multiple",
-    "single": "./node_modules/.bin/wdio conf/single.conf.js",
+    "single": "node_modules\\.bin\\wdio conf\\browserstack.config.js",
     "parallel": "./node_modules/.bin/wdio conf/parallel.conf.js",
     "multiple": "./node_modules/.bin/wdio conf/multiple.conf.js"
   },
@@ -27,10 +27,11 @@
   "dependencies": {
     "chai": "*",
     "mocha": "*",
+    "selenium-webdriver": "^4.1.1",
     "webdriverio": "*"
   },
   "devDependencies": {
-    "@wdio/cli": "*",
+    "@wdio/cli": "^7.16.13",
     "@wdio/local-runner": "*",
     "@wdio/mocha-framework": "*",
     "@wdio/sync": "*",
